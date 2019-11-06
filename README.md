@@ -1,6 +1,6 @@
 
 
-<h3 align="center">Covalisage</h3>
+<h1 align="center">Covalisage</h1>
 
 # Application mobile hybride Ionic3
 
