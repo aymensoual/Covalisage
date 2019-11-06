@@ -3,7 +3,7 @@
 transport de colis de particuliers à particuliers 
 
 
-  <img style:"display: inline-block" src="https://i.ibb.co/vXQ3kbh/1.png" width="200">
+  <img src="https://i.ibb.co/vXQ3kbh/1.png" width="200">
  
   <img src="https://i.ibb.co/LPt5TDw/2.png" width="200">
   
