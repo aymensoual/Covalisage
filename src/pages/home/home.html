@@ -1,0 +1,83 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>MAP</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <div id="floating-panel">
+    <b>Start: </b>
+    <select [(ngModel)]="start" id="start" (change)="calculateAndDisplayRoute()">
+      <option value="Tunisie">Tunisie</option>
+    </select><br>
+    <b>End: </b>
+    <select [(ngModel)]="end" id="end" (change)="calculateAndDisplayRoute()">
+      <option value="Albanie">Albanie</option>
+      <option value="Alger">Algérie</option>
+      <option value="Allemagne">Allemagne</option>
+      <option value="Australie">Australie</option>
+      <option value="Argentine">Argentine</option>
+      <option value="Autriche">Autriche</option>
+      <option value="Belgique">Belgique</option>
+      <option value="Bresil">Bresil</option>
+      <option value="Bulgarie">Bulgarie</option>
+      <option value="Cameroun">Cameroun</option>
+      <option value="Canada">Canada</option>
+      <option value="Chili">Chili</option>
+      <option value="Chine">Chine</option>
+      <option value="Chypre">Chypre</option>
+      <option value="Colombie">Colombie</option>
+      <option value="Congo">Congo</option>
+      <option value="Croatie">Croatie</option>
+      <option value="Cuba">Cuba</option>
+      <option value="Danemark">Danemark</option>
+      <option value="Djibouti">Djibouti</option>
+      <option value="Dominique">Dominique</option>
+      <option value="Égypte">Egypte</option>
+      <option value="Equateur">Equateur</option>
+      <option value="Espagne">Espagne</option>
+      <option value="États-Unis">États-Unis</option>
+      <option value="Finlande">Finlande</option>
+      <option value="France">France</option>
+      <option value="Gabon">Gabon</option>
+      <option value="Gambie">Gambie</option>
+      <option value="Georgie">Georgie</option>
+      <option value="Ghana">Ghana</option>
+      <option value="Haiti">Haiti</option>
+      <option value="Hawaii">Hawaii</option>
+      <option value="Honduras">Honduras</option>
+      <option value="Hong Kong">Hong Kong</option>
+      <option value="Iran">Iran</option>
+      <option value="Iraq">Iraq</option>
+      <option value="Irlande">Irlande</option>
+      <option value="Islande">Islande</option>
+      <option value="Italie">Italie</option>
+      <option value="Jamaique">Jamaique</option>
+      <option value="Japon">Japon</option>
+      <option value="Koweit">Koweit</option>
+      <option value="Liban">Liban</option>
+      <option value="Maroc">Maroc</option>
+      <option value="Niger">Niger</option>
+      <option value="Portugal">Portugal</option>
+      <option value="Pologne">Pologne</option>
+      <option value="Portugal">Portugal</option>
+      <option value="Qatar">Qatar</option>
+      <option value="Roumanie">Roumanie</option>
+      <option value="Russie">Russie</option>
+      <option value="Senegal">Senegal</option>
+      <option value="Malaisie">Malaisie</option>
+      <option value="Syrie">Syrie</option>
+      <option value="Tchad">Tchad</option>
+      <option value="Thailande">Thailande</option>
+      <option value="Tunisie">Tunisie</option>
+      <option value="Turquie">Turquie</option>
+      <option value="Ukraine">Ukraine</option>
+      <option value="Uruguay">Uruguay</option>
+      <option value="Vietnam">Vietnam</option>
+      <option value="Zimbabwe">Zimbabwe</option>
+    </select>
+  </div>
+  <div #map id="map"></div>
+</ion-content>

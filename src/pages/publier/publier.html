@@ -1,0 +1,250 @@
+
+
+<ion-content class="background">
+
+
+  <div style="width:500px;height:30px;"></div>
+
+
+
+  <ion-card>
+    <ion-list no-lines>
+      <ion-item>
+        <ion-input [(ngModel)]="Nom" placeholder="Nom" ></ion-input>
+        <ion-icon name="ios-person" item-left></ion-icon>
+      </ion-item>
+    </ion-list>
+
+    <ion-list no-lines>
+      <ion-item>
+        <ion-input [(ngModel)]="Prenom"  placeholder="Prénom"></ion-input>
+        <ion-icon name="ios-person-outline" item-left></ion-icon>
+      </ion-item>
+    </ion-list>
+
+
+
+    <ion-list no-lines>
+      <ion-item>
+        <ion-input type="number" pattern="[0-9]*" [(ngModel)]="Telephone"  placeholder="Telephone "></ion-input>
+        <ion-icon name="call" item-left></ion-icon>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list no-lines>
+      <ion-item>
+        <ion-select placeholder="Départ" [(ngModel)]="Pays" [selectOptions]="PaysAlertOpts">
+          <ion-option (select)="stpSelect()">Tunisie</ion-option>
+        </ion-select>
+        <ion-icon name="ios-flag" item-left></ion-icon>
+      </ion-item>
+    </ion-list>
+
+
+
+
+    <ion-item>
+      <ion-select  placeholder="Déstination" [(ngModel)]="Pays1" [selectOptions]="PaysAlertOpts1">
+        <ion-option>Afghanistan</ion-option>
+        <ion-option>Afrique Centrale</ion-option>
+        <ion-option>Afrique du sud</ion-option>
+        <ion-option>Albanie</ion-option>
+        <ion-option>Algerie</ion-option>
+        <ion-option>Allemagne</ion-option>
+        <ion-option>Andorre</ion-option>
+        <ion-option>Angola</ion-option>
+        <ion-option>Anguilla</ion-option>
+        <ion-option>Arabie Saoudite</ion-option>
+        <ion-option>Argentine</ion-option>
+        <ion-option>Armenie</ion-option>
+        <ion-option>Australie</ion-option>
+        <ion-option>Autriche</ion-option>
+        <ion-option>Azerbaidjan</ion-option>
+        <ion-option>Bahamas</ion-option>
+        <ion-option>Bangladesh</ion-option>
+        <ion-option>Barbade</ion-option>
+        <ion-option>Bahrein</ion-option>
+        <ion-option>Belgique</ion-option>
+        <ion-option>Belize</ion-option>
+        <ion-option>Benin</ion-option>
+        <ion-option>Bermudes</ion-option>
+        <ion-option>Bielorussie</ion-option>
+        <ion-option>Bolivie</ion-option>
+        <ion-option>Botswana</ion-option>
+        <ion-option>Bhoutan</ion-option>
+        <ion-option>Boznie Herzegovine</ion-option>
+        <ion-option>Bresil</ion-option>
+        <ion-option>Brunei</ion-option>
+        <ion-option>Bulgarie</ion-option>
+        <ion-option>Burkina Faso</ion-option>
+        <ion-option>Burundi</ion-option>
+        <ion-option>Caiman </ion-option>
+        <ion-option>Cambodge </ion-option>
+        <ion-option>Cameroun </ion-option>
+        <ion-option>Canada </ion-option>
+        <ion-option>Canaries </ion-option>
+        <ion-option>Cap Vert </ion-option>
+        <ion-option>Chili </ion-option>
+        <ion-option>Chine</ion-option>
+        <ion-option>Chypre </ion-option>
+        <ion-option>Colombie </ion-option>
+        <ion-option>Congo</ion-option>
+        <ion-option>Congo democratique </ion-option>
+        <ion-option>Coree du_Nord </ion-option>
+        <ion-option>Coree du_Sud </ion-option>
+        <ion-option>Costa Rica </ion-option>
+        <ion-option>Côte d'Ivoire </ion-option>
+        <ion-option>Croatie </ion-option>
+        <ion-option>Cuba</ion-option>
+        <ion-option>Danemark  </ion-option>
+        <ion-option>Djibouti  </ion-option>
+        <ion-option>Dominique  </ion-option>
+        <ion-option>Egypte  </ion-option>
+        <ion-option>Emirats Arabes Unis  </ion-option>
+        <ion-option>Equateur  </ion-option>
+        <ion-option>Espagne  </ion-option>
+        <ion-option>Etats Unis   </ion-option>
+        <ion-option>Ethiopie  </ion-option>
+        <ion-option>Falkland  </ion-option>
+        <ion-option>Feroe  </ion-option>
+        <ion-option>Fidji  </ion-option>
+        <ion-option>Finlande  </ion-option>
+        <ion-option>France  </ion-option>
+        <ion-option>Gabon </ion-option>
+        <ion-option>Gambie  </ion-option>
+        <ion-option>Georgie  </ion-option>
+        <ion-option>Ghana </ion-option>
+        <ion-option>Haiti </ion-option>
+        <ion-option>Hawaii </ion-option>
+        <ion-option>Honduras </ion-option>
+        <ion-option>Hong Kong </ion-option>
+        <ion-option>Iran </ion-option>
+        <ion-option>Iraq </ion-option>
+        <ion-option>Irlande </ion-option>
+        <ion-option>Islande </ion-option>
+        <ion-option>Italie </ion-option>
+        <ion-option>Jamaique </ion-option>
+        <ion-option>Japon </ion-option>
+        <ion-option>Jersey </ion-option>
+        <ion-option>Jordanie </ion-option>
+        <ion-option>Kazakhstan </ion-option>
+        <ion-option>Kirghizstan </ion-option>
+        <ion-option>Koweit </ion-option>
+        <ion-option>Laos </ion-option>
+        <ion-option>Lesotho </ion-option>
+        <ion-option>Liban </ion-option>
+        <ion-option>Liechtenstein </ion-option>
+        <ion-option>Lituanie </ion-option>
+        <ion-option>Luxembourg </ion-option>
+        <ion-option>Macao </ion-option>
+        <ion-option>Macedoine </ion-option>
+        <ion-option>Madagascar </ion-option>
+        <ion-option>Madère </ion-option>
+        <ion-option>Malaisie </ion-option>
+        <ion-option>Malawi </ion-option>
+        <ion-option>Mali </ion-option>
+        <ion-option>Malte </ion-option>
+        <ion-option>Maroc </ion-option>
+        <ion-option>Niger </ion-option>
+        <ion-option>Pays_Bas </ion-option>
+        <ion-option>Pologne </ion-option>
+        <ion-option>Portugal </ion-option>
+        <ion-option>Qatar </ion-option>
+        <ion-option>Roumanie </ion-option>
+        <ion-option>Royaume_Uni </ion-option>
+        <ion-option>Russie </ion-option>
+        <ion-option>Rwanda </ion-option>
+        <ion-option>Senegal </ion-option>
+        <ion-option>Somalie </ion-option>
+        <ion-option>Soudan </ion-option>
+        <ion-option>Slovaquie </ion-option>
+        <ion-option>Syrie </ion-option>
+        <ion-option>Swaziland </ion-option>
+        <ion-option>Surinam </ion-option>
+        <ion-option>Tadjikistan </ion-option>
+        <ion-option>Taiwan </ion-option>
+        <ion-option>Tonga </ion-option>
+        <ion-option>Tanzanie </ion-option>
+        <ion-option>Tchad </ion-option>
+        <ion-option>Thailande </ion-option>
+        <ion-option>Togo </ion-option>
+        <ion-option>Tunisie </ion-option>
+        <ion-option>Turkmenistan </ion-option>
+        <ion-option>Turquie  </ion-option>
+        <ion-option>Ukraine  </ion-option>
+        <ion-option>Uruguay  </ion-option>
+        <ion-option>Vanuatu  </ion-option>
+        <ion-option>Vatican  </ion-option>
+        <ion-option>Venezuela  </ion-option>
+        <ion-option>Vierges Americaines  </ion-option>
+        <ion-option>Vierges Britanniques  </ion-option>
+        <ion-option>Vietnam  </ion-option>
+        <ion-option>Zimbabwe </ion-option>
+        <ion-option (select)="stpSelect()"></ion-option>
+      </ion-select>
+      <ion-icon name="ios-flag-outline" item-left></ion-icon>
+    </ion-item>
+
+
+
+
+
+    <ion-list no-lines>
+      <ion-item>
+        <ion-datetime displayFormat="MMMM/DDDD/YYYY" min="2018-01-10" max="2020-10-31" [(ngModel)]="myDate" placeholder="Date de voyage"></ion-datetime>
+        <ion-icon name="ios-calendar" item-left></ion-icon>
+      </ion-item>
+    </ion-list>
+
+
+
+    <ion-list no-lines>
+      <ion-item>
+        <ion-input type="number" pattern="[0-9]*" [(ngModel)]="Prixkg" placeholder="Prix/Kg"></ion-input>
+        <ion-icon name="ios-cash" item-left></ion-icon>
+      </ion-item>
+    </ion-list>
+
+
+
+    <ion-list no-lines>
+      <ion-item>
+        <ion-input type="number" pattern="[0-9]*" [(ngModel)]="Poids" placeholder="Poids"></ion-input>
+        <ion-icon name="ios-basket" item-left></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+
+
+
+
+  <div style="width:500px;height:20px;"></div>
+
+
+
+
+
+  <button ion-button style="font-weight:600;font-size:20px" (click)="btnAddClicked(Nom,Prenom,Telephone,Pays,Pays1,myDate,Prixkg,Poids)" (click)="doAlert()" (click)="presentLoading()" color="bleuciel" Default block icon-only >&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Publier &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </button>
+
+  <div style="width:500px;height:10px;"></div>
+
+
+  <button ion-button style="font-weight:600;font-size:15px" small block  color="bleuciel" Default navPop>Retour</button>
+
+
+
+
+</ion-content>
+
+
+
+
+
+
+
+
+
+
+
+

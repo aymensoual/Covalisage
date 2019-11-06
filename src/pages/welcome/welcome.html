@@ -1,0 +1,18 @@
+<ion-content class="tutorial-page">
+
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p   align="center" [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <img  class="slide-image"/>
+      <h2 class="slide-title">Vous êtes prêts ?</h2>
+      <button ion-button large clear on-click="gologinPage()" icon-end color="primary">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

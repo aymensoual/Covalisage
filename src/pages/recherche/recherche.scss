@@ -1,0 +1,22 @@
+page-recherche {
+  h2 {
+    font-size: 100%;
+  }
+
+  .background {
+    background-image: url('../assets/imgs/travel2.jpg');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+
+  }
+
+
+  .list-avatar-page {
+    ion-note {
+      font-size: 12px;
+      align-self: flex-start;
+      margin-top: 14px;
+    }
+  }
+}

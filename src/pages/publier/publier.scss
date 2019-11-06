@@ -1,0 +1,83 @@
+page-publier {
+  .background {
+    background-image: url('../assets/imgs/travel2.jpg');
+
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .scroll-content {
+    text-align: center;
+  }
+  ion-card.card {
+    background: rgba(232, 230, 230, 0.7px);
+    border-radius: 10px;
+  }
+
+
+
+
+  h5 {
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+  }
+
+  .item{
+    background: rgba(232,230,230,0px);
+
+  }
+  ion-input{
+    border-button:#FD4D73,solid1px;
+  }
+  h1{
+    color:#fff;
+    font-size: 3em;
+    font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+    font-weight:lighter;
+  }
+
+  .user {
+    color: #1A237E;
+    Font-Weight: normal;
+    font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+
+  }
+
+  .with {
+
+    Font-Weight: normal;
+  }
+  h2{
+    font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+    font-size: 10px;
+    color: #f7f7f7;
+
+
+  }
+
+  h6{
+    font-family: 'Gill Sans','Gill Sans MT',Calibri,'Trebuchet MS',sans-serif;
+    font-size: 10px;
+    text-align: center;
+
+  }
+
+
+
+
+
+  h3{
+    font-size: 10px;
+    text-align: center;
+
+  }
+
+  or {
+    text-align: center;
+  }
+
+}

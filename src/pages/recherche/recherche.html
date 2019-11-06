@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      ANNONCES TROUVÉES
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="background">
+      <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+      <ion-list>
+      <ion-item *ngFor="let user of userList">
+      <ion-thumbnail ><img style="margin-left: auto;margin-right: auto;" src='assets/imgs/user1.png'></ion-thumbnail>
+        <div style="width:500px;height:20px;"></div>
+      <h3><strong> Nom:            </strong> {{ user.Nom }}                   <ion-icon name="ios-person"></ion-icon> </h3>
+      <h3><strong> Prenom:         </strong> {{ user.Prenom }}                <ion-icon name="ios-person-outline"></ion-icon> </h3>
+      <h3><strong> Telephone:      </strong> {{ user.Telephone }}             <ion-icon name="ios-call"></ion-icon>     </h3>
+      <h3><strong> Départ:         </strong> {{ user.Pays }}                  <ion-icon name="ios-flag"></ion-icon>    </h3>
+      <h3><strong> Déstination:    </strong> {{ user.Pays1 }}                 <ion-icon name="ios-flag-outline"></ion-icon>     </h3>
+      <h3><strong> Date de voyage: </strong> {{ user.myDate }}                <ion-icon name="md-calendar"></ion-icon>  </h3>
+      <h3><strong> Poids:          </strong> {{ user.Poids }}  kg disponible  <ion-icon name="ios-basket"></ion-icon>   </h3>
+      <h3><strong> Prixkg:         </strong> {{ user.Prixkg }} dinars par kg  <ion-icon name="md-cash"></ion-icon>      </h3>
+        <h3>  <ion-icon name="ios-map"> </ion-icon> <button clear item-end  (click)="goHomePage()">MAP </button><ion-icon name="ios-map"> </ion-icon> </h3>
+
+      </ion-item>
+    </ion-list>
+    </ion-content>
